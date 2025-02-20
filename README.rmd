@@ -1,0 +1,30 @@
+# LicensePlateBlur
+
+## Description
+This script uses a YOLO model to automatically detect and blur license plates in images within a specified folder. It was created out of necessity and is shared in case it might be useful to someone.
+
+## Requirements
+- Python 3.x
+- OpenCV
+- Ultralytics YOLO
+
+To install the required dependencies:
+```sh
+pip install opencv-python opencv-python-headless ultralytics
+```
+
+## Usage
+Run the script by specifying the folder containing the images:
+```sh
+python blur_license_plates.py --folder_path "path/to/folder"
+```
+The script will save the modified images in an output folder (`Output_2` by default).
+
+## Repository Structure
+- `blur_license_plates.py`: Main script for license plate detection and blurring.
+- `license_plate_detector.pt`: YOLO model for license plate detection (not included, must be downloaded separately).
+
+## Notes
+The code is provided "as is" without any guarantees of accuracy or performance. It can be improved or adapted as needed.
+
+
